@@ -8,8 +8,8 @@ jobs:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
         with:
-          node-version: 20
+          node-version: 22
       - run: npm ci
       - run: npx playwright install --with-deps
-      - run: npx playwright test   # Ejecuta pruebas funcionales y de integración
-      - run: npx jest               # Ejecuta las pruebas unitarias de Jest
+      - run: npx playwright test   # Pruebas funcionales/aceptación
+      - run: npx jest               # Pruebas de unidad
