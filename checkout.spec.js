@@ -29,5 +29,5 @@ test('Prueba de aceptación: completar compra de un producto', async ({ page }) 
 
   // 8. Verificar el mensaje de éxito
   const mensajeExito = page.locator('.complete-header');
-  await expect(mensajeExito).toHaveText('Gracias por su orden!');
+  await expect(mensajeExito).toHaveText('Thank you for your order!');
 });
